@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My-Quiz-Game</title>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+
+<body>
+
+    <!-- Header -->
+    <!-- <header class="header">
+        <div class="header-content">
+            <h1>Science Quiz Game</h1>
+            <p>Challenge yourself with fun science questions!</p>
+        </div>
+    </header> -->
+
+    <!-- Container for the entire quiz game -->
+    <div class="container">
+
+        <div class="screen active" id="start-screen">
+            <h1>Quiz Time!</h1>
+            <p>Test your knowledge with our fun and challenging science quiz!</p>
+            <button id="start-btn">Start Quiz</button>
+        </div>
+
+        <!-- Quiz Screen -->
+
+        <div class="screen" id="quiz-screen">
+            <!-- Quiz Screen --> <!-- Header -->
+            <div class="quiz-header">
+                <h2 id="question-text">Question goes here</h2>
+                <div class="quiz-info">
+                    <p>
+                        Question <span id="current-question">1</span> of <span id="total-questions">20</span>
+                    </p>
+                    <p>
+                        Score: <span id="score">0</span>
+                    </p>
+                </div>
+                <!-- Answers Container  -->
+            </div>
+            <div id="answers-container" class="answers-container">
+                <!-- Answer buttons will be dynamically added here -->
+
+            </div>
+            <!-- Progress Bar -->
+            <div class="progress-bar">
+                <div id="progress" class="progress"></div>
+            </div>
+
+
+        </div>
+        <!-- Result Screen -->
+        <div id="result-screen" class="screen">
+            <h2>Your Quiz Results</h2>
+            <div class="result-info">
+                <p>
+                    You scored <span id="final-score">0</span> out of <span id="max-score">20</span>
+                </p>
+                <div id="result-message">Good Job</div>
+            </div>
+            <button id="restart-btn">Restart Quiz</button>
+        </div>
+
+    </div>
+
+    <!-- footer   -->
+    <!-- <footer class="footer">
+        <div class="footer-content">
+            <p>&copy; 2025 Science Quiz Game. All rights reserved.</p>
+            <div>
+                <a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a> | <a href="#">Contact Us</a>
+            </div>
+        </div>
+
+    </footer> -->
+
+    <script src="./script.js"></script>
+</body>
+
+</html>
